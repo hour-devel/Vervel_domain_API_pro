@@ -1,0 +1,583 @@
+/* ==========================developer==================== */
+.develper-container{
+    width: 100%;
+    height: 685px;
+    margin-top: 75px;
+    background-color: #fff;
+    float: left;
+    position: relative;
+}
+.develper-container .photo{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0,-50%);
+    background-color: transparent;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.develper-container .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.develper-container .txt{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 55%;
+    right: 15%;
+    transform: translateY(-50%);
+    background-color:transparent;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+.develper-container .txt h1{
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+.develper-container .txt h2{
+    font-size: 26px;
+    font-weight: 100;
+    font-family: 'Lugrasimo', cursive;
+}
+.develper-container .txt p{
+    width: 100%;
+    margin-top: 30px;
+}
+.knowledge-container{
+    width: 100%;
+    height: 760px;
+    background-color: #089CF4;
+    float: left;
+    position: relative;
+}
+.knowledge-container h1{
+    color: #fff;
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    font-size: 60px;
+    font-family: 'Lugrasimo', cursive;
+}
+.knowledge-container ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+.knowledge-container ul li{
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+.knowledge-container ul li a{
+    color: #000;
+    font-size: 24px;
+    display: block;
+    padding: 20px;
+    font-family: 'Kantumruy Pro', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+.knowledge-container ul li a img{
+    margin-top: 20px;
+    width: 70px;
+    height: 60px;
+}
+.Experience-container{
+    width: 100%;
+    height: 760px;
+    background-color: #fff;
+    float: left;
+    position: relative;
+}
+.Experience-container h1{
+    color: #000;
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    font-size: 60px;
+    font-family: 'Lugrasimo', cursive;
+}
+.Experience-container ul{
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+    list-style-type:disc;
+}
+.Experience-container ul li a{
+    color: #000;
+    font-size: 40px;
+    display: inline-block;
+    padding: 20px 0;
+    font-family: 'Lugrasimo', cursive;
+    text-decoration: none;
+    text-align: center;
+}
+.education-container{
+    width: 100%;
+    height: 760px;
+    background-color: #089CF4;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.education-container h1{
+    color: #fff;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 50px;
+    font-family: 'Lugrasimo', cursive;
+}
+.education-container ul{
+    margin-left: 5%;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    padding: 0;
+    list-style-type:disc;
+}
+.education-container ul li a{
+    color: #000;
+    font-size: 26px;
+    display: inline-block;
+    padding:10px 0;
+    font-family: 'Kantumruy Pro', sans-serif;
+    text-decoration: none;
+}
+.contact-container{
+    width: 100%;
+    height: 760px;
+    background-color: #fff;
+    float: left;
+    position: relative;
+}
+.contact-container h1{
+    color: #000;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    font-size: 60px;
+    font-family: 'Lugrasimo', cursive;
+}
+.contact-container ul{
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+    list-style-type:disc;
+}
+.contact-container ul li a{
+    color: #000;
+    font-size: 26px;
+    display: inline-block;
+    padding: 20px 0;
+    font-family: 'Lugrasimo', cursive;
+    text-decoration: none;
+    text-align: center;
+}
+.contact-container ul li a:hover{
+    text-decoration: underline;
+    transition: .5s;
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* ===============================DEVELOPER======================== */
+    .develper-container .photo{
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        transform: translate(0,-50%);
+        background-color: transparent;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .develper-container .txt{
+        width: 600px;
+        height: auto;
+        position: absolute;
+        top: 60%;
+        right: 10%;
+        transform: translateY(-50%);
+        background-color:transparent;
+        overflow: hidden;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* ===============================DEVELOPER======================== */
+    .develper-container{
+        width: 100%;
+        height: 685px;
+        margin-top: 75px;
+        background-color: #fff;
+        float: left;
+        position: relative;
+    }
+    .develper-container .photo{
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: transparent;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .develper-container .txt{
+        width: 600px;
+        height: auto;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        background-color:transparent;
+        overflow: hidden;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .education-container h1{
+        color: #fff;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        font-size: 34px;
+        font-family: 'Lugrasimo', cursive;
+    }
+    .education-container ul{
+        margin-left: 5%;
+        width: 90%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-40%);
+        padding: 0;
+        list-style-type:disc;
+    }
+    .education-container ul li a{
+        color: #000;
+        font-size: 24px;
+        display: inline-block;
+        padding:10px 0;
+        font-family: 'Kantumruy Pro', sans-serif;
+        text-decoration: none;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+    /* ===============================DEVELOPER======================== */
+    .develper-container{
+        width: 100%;
+        height: 685px;
+        margin-top: 75px;
+        background-color: #fff;
+        float: left;
+        position: relative;
+    }
+    .develper-container .photo{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: transparent;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .develper-container .txt{
+        width:100%;
+        height: auto;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        background-color:transparent;
+        overflow: hidden;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .develper-container .txt p{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .knowledge-container h1{
+        color: #fff;
+        position: absolute;
+        top: 100px;
+        left: 80px;
+        font-size: 40px;
+        font-family: 'Lugrasimo', cursive;
+    }
+    .knowledge-container ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: absolute;
+        top: 55%;
+        left: 15%;
+        transform: translateY(-50%);
+    }
+    .knowledge-container ul li a{
+        color: #000;
+        font-size: 20px;
+        display: block;
+        padding: 20px;
+        font-family: 'Kantumruy Pro', sans-serif;
+        text-decoration: none;
+        text-align: center;
+    }
+    .Experience-container h1{
+        position: absolute;
+        top: 150px;
+        left: 80px;
+        font-size: 40px;
+    }
+    .Experience-container ul{
+        position: absolute;
+        top: 55%;
+        left: 35%;
+        transform: translateY(-50%);
+        padding: 0;
+        margin: 0;
+        list-style-type:disc;
+    }
+    .Experience-container ul li a{
+        font-size: 30px;
+        display: inline-block;
+        padding: 20px 0;
+        font-family: 'Lugrasimo', cursive;
+        text-decoration: none;
+        text-align: center;
+    }
+    .education-container h1{
+        color: #fff;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        font-size: 32px;
+        font-family: 'Lugrasimo', cursive;
+    }
+    .education-container ul{
+        margin-left: 5%;
+        width: 90%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-40%);
+        padding: 0;
+        list-style-type:disc;
+    }
+    .education-container ul li a{
+        color: #000;
+        font-size: 22px;
+        display: inline-block;
+        padding:10px 0;
+        font-family: 'Kantumruy Pro', sans-serif;
+        text-decoration: none;
+    }
+    .contact-container h1{
+        color: #000;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        font-size: 55px;
+        font-family: 'Lugrasimo', cursive;
+    }
+    .contact-container ul{
+        position: absolute;
+        top: 55%;
+        left: 20%;
+        transform: translateY(-50%);
+        padding: 0;
+        margin: 0;
+        list-style-type:disc;
+    }
+    .contact-container ul li a{
+        color: #000;
+        font-size: 20px;
+        display: inline-block;
+        padding: 26px 0;
+        font-family: 'Lugrasimo', cursive;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+        /* ===============================DEVELOPER======================== */
+    .develper-container{
+        width: 100%;
+        height: 685px;
+        margin-top: 75px;
+        background-color: #fff;
+        float: left;
+        position: relative;
+    }
+    .develper-container .photo{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateY(-50%);
+        transform: translatex(-50%);
+        background-color: transparent;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .develper-container .txt{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+        background-color:transparent;
+        overflow: hidden;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .develper-container .txt p{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .knowledge-container h1{
+        color: #fff;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+        font-size: 40px;
+        font-family: 'Lugrasimo', cursive;
+    }
+    .knowledge-container ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: absolute;
+        top: 55%;
+        left: 15%;
+        transform: translateY(-50%);
+    }
+    .knowledge-container ul li a{
+        color: #000;
+        font-size: 20px;
+        display: block;
+        padding: 20px;
+        font-family: 'Kantumruy Pro', sans-serif;
+        text-decoration: none;
+        text-align: center;
+    }
+    .Experience-container h1{
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        font-size: 40px;
+    }
+    .Experience-container ul{
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        transform: translateY(-50%);
+        padding: 0;
+        margin: 0;
+        list-style-type:disc;
+    }
+    .Experience-container ul li a{
+        font-size: 30px;
+        display: inline-block;
+        padding: 20px 0;
+        font-family: 'Lugrasimo', cursive;
+        text-decoration: none;
+        text-align: center;
+    }
+    .education-container h1{
+        color: #fff;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        font-size: 30px;
+        font-family: 'Lugrasimo', cursive;
+    }
+    .education-container ul{
+        margin-left: 5%;
+        width: 90%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-40%);
+        padding: 0;
+        list-style-type:disc;
+    }
+    .education-container ul li a{
+        color: #000;
+        font-size: 18px;
+        display: inline-block;
+        padding:10px 0;
+        font-family: 'Kantumruy Pro', sans-serif;
+        text-decoration: none;
+    }
+    .contact-container h1{
+        color: #000;
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        font-size: 50px;
+        font-family: 'Lugrasimo', cursive;
+    }
+    .contact-container ul{
+        position: absolute;
+        top: 55%;
+        left: 20%;
+        transform: translateY(-50%);
+        padding: 0;
+        margin: 0;
+        list-style-type:disc;
+    }
+    .contact-container ul li a{
+        color: #000;
+        font-size: 20px;
+        display: inline-block;
+        padding: 22px 0;
+        font-family: 'Lugrasimo', cursive;
+        text-decoration: none;
+        text-align: center;
+    }
+}

@@ -1,0 +1,591 @@
+.product-con{
+    width: 76%;
+    margin-top: 100px;
+}
+.product-con .filter{
+    padding:10px 5px;
+}
+.product-con .filter .filter-box{
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #28a745;
+    box-shadow: 0 0 1px 0 rgba(51,51,51,.397);
+    z-index: 100000000000;
+}
+.product-con .filter .filter-box h1{
+    font-family: 'Hanuman', serif;
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0;
+}
+.product-con .filter .filter-box:nth-child(2){
+    margin-top: 15px;
+}
+.product-con .filter .filter-box:nth-child(3){
+    margin-top: 15px;
+}
+.product-con .filter .filter-box ul li{
+    font-family: 'Hanuman', serif;
+    background-color: #fff;
+    color: #555;
+    transition: .3s;
+}
+.product-con .filter .filter-box ul li.active{
+    background-color: #40E0D0;
+    color: #fff;
+}
+.product-con .filter .filter-box ul li:hover{
+    background-color: #eee;
+    color: #555;
+    transition: .3s;
+}
+.product-con .filter .filter-box ul li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.product-con .filter .filter-box ul li a i{
+    float: right;
+    margin-right: 5px;
+}
+.product-con .filter .filter-box:nth-child(2) ul li a i{
+    margin-top: 2px;
+    font-size: 14px;
+    float: left;
+}
+.product-con .filter .filter-box:nth-child(3) ul li a i{
+    float: left;
+    margin-top: 2px;
+    font-size: 14px;
+}
+.product-con .product{
+    padding:10px 5px;
+}
+.product-con .product .product-box{
+    width: 100%;
+    overflow: hidden;
+}
+.product-con .product .product-box .img-box{
+    width: 100%;
+    height: 150px;
+    float: left;
+}
+.product-con .product .product-box .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-con .product .product-box .title-box{
+    width: 100%;
+    float: left;    
+    position: relative;
+}
+.product-con .product .product-box .title-box h1{
+    font-family: 'Hanuman', serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+}
+.product-con .product .product-box .title-box .btn-filter{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 4px;
+    display: none;
+}
+.product-con .product .product-box .pro-container{
+    width: 100%;
+    float: left;
+}
+.product-con .product .product-box .pro-container .box{
+    padding: 5px;
+}
+.product-con .product .product-box .pro-container .box .pro-box{
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+    height: 350px;
+    background-color: #f5f5f5; 
+    position: relative;
+}
+.product-con .product .product-box .pro-container .box .pro-box .box-img{
+    width: 100%;
+    height: 75%;
+    float: left;
+    overflow: hidden;
+}
+.product-con .product .product-box .pro-container .box .pro-box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.product-con .product .product-box .pro-container .box .pro-box:hover .box-img img{
+    transition: 0.3s;
+    transform: scale(1.1)
+}
+.product-con .product .product-box .pro-container .box:hover .pro-box .shop{
+    display: block;
+    transition: .5s;
+}
+.product-con .product .product-box .pro-container .box:hover .pro-box .fb{
+    display: block;
+    transition: .5s;
+}
+.product-con .product .product-box .pro-container .box:hover .pro-box .link-cp{
+    display: block;
+    transition: .5s;
+}
+.product-con .product .product-box .pro-container .box .pro-box .shop{
+    border-radius: 4px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color:#eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+    display: none;
+}
+.product-con .product .product-box .pro-container .box .pro-box .shop:hover{
+    background-color: #d6161a;
+    color: #fff
+}
+.product-con .product .product-box .pro-container .box .pro-box .shop i{
+    margin: 0;
+    font-size: 17px;
+    padding:10px 8px;
+}
+.product-con .product .product-box .pro-container .box .pro-box .fb{
+    border-radius: 4px;
+    position: absolute;
+    right: 5px;
+    top: 46px;
+    background-color:#eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+    display: none;
+}
+.product-con .product .product-box .pro-container .box .pro-box .fb:hover{
+    background-color: #3e5b97;
+    color: #fff
+}
+.product-con .product .product-box .pro-container .box .pro-box .fb i{
+    margin: 0;
+    font-size: 17px;
+    padding:10px;
+}
+.product-con .product .product-box .pro-container .box .pro-box .link-cp{
+    border-radius: 4px;
+    position: absolute;
+    right: 5px;
+    top: 87px;
+    background-color:#eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+    display: none;
+}
+.product-con .product .product-box .pro-container .box .pro-box .link-cp:hover{
+    background-color: #b2b5b9;
+    color: #fff
+}
+.product-con .product .product-box .pro-container .box .pro-box .link-cp i{
+    margin: 0;
+    font-size: 17px;
+    padding:10px 7px;
+}
+.product-con .product .product-box .pro-container .box .pro-box .box-txt{
+    width: 100%;
+    height: 25%;
+    float: left;
+    padding:8px 4px;
+    position: relative;
+}
+.product-con .product .product-box .pro-container .box .pro-box .box-txt h1{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #194594;
+    text-transform: uppercase;
+    font-family: 'Hanuman', serif;
+    line-height: 20px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.product-con .product .product-box .pro-container .box .pro-box:hover .box-txt h1{
+    color: #d8161a;
+    transition: 0.3s;
+}
+.product-con .product .product-box .pro-container .box .pro-box .box-txt h2{
+    font-family: 'Hanuman', serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+}
+.product-con .product .view-more{
+    width: 100%;
+    float: left;
+    background-color: red;
+    margin: 20px;
+    margin-bottom: 90px;
+    position: relative;
+}
+.product-con .product .view-more .box{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 25px;
+    background-color: #000;
+    border-radius: 4px;
+    color: #fff!important;
+    font-size: 13px;
+    box-shadow: 1px 1px 5px 0 #333;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    opacity: .7;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.product-con .product .view-more .box:hover {
+    opacity: .9
+}
+.product-con .product .view-more .box p {
+    line-height: 15px;
+    padding: 0;
+    margin: 0;
+}
+.product-con .product .view-more .box p i {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.pro-detail-con{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 4px;
+}
+.pro-detail-con .pro-detail-box{
+    width: 100%;
+    height: 640px;
+}
+.pro-detail-con .pro-detail-box .box{
+    height: 100%;
+}
+.pro-detail-con .pro-detail-box .img-box{
+    width: 60%;
+    height: 100%;
+    float: left;
+    padding:30px 20px;
+}
+.pro-detail-con .pro-detail-box .img-box img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.pro-detail-con .pro-detail-box .img-box .filter-img{
+    width: 100%;
+    height: 20%;
+}
+.pro-detail-con .pro-detail-box .img-box .filter-img .swiper{
+    width: 100%;
+    height: 100%;
+}
+.pro-detail-con .pro-detail-box .img-box .filter-img .swiper .swiper-slide{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-top: 17px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 1px #000;
+}
+.pro-detail-con .pro-detail-box .img-box .filter-img .swiper .swiper-slide a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+.pro-detail-con .pro-detail-box .img-box .filter-img .swiper .swiper-slide a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pro-detail-con .pro-detail-box .txt-box{
+    width: 40%;
+    height: 100%;
+    float: left;
+    font-family: 'Hanuman', serif;
+}
+.pro-detail-con .pro-detail-box .txt-box .title1 {
+    font-family: 'Hanuman', serif;
+    margin-top: 40px;
+    font-size: 26px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 7px;
+    position: relative;
+    padding-bottom: 7px;
+}
+.pro-detail-con .pro-detail-box .txt-box .title2{
+    font-family: 'Hanuman', serif;
+    font-size: 17px;
+    color: #28a745;
+    font-weight: 700;
+    padding-bottom: 5px;
+    padding-top: 10px
+}
+.pro-detail-con .pro-detail-box .txt-box .title2 span{
+    font-size: 15px;
+}
+.pro-detail-con .pro-detail-box .txt-box .add-card{
+    height: 220px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.pro-detail-con .pro-detail-box .txt-box .add-card .qty{
+    width: 100%;
+    height:auto;
+    background-color: #28a745;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.pro-detail-con .pro-detail-box .txt-box .add-card .qty button{
+    width: 10%;
+    height: 45px;
+    margin-top: 0;
+    border-radius: 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+.pro-detail-con .pro-detail-box .txt-box .add-card .qty input#qty{
+    width: 80%;
+    height: 45px;
+    float: left;
+    border-radius: 0;
+    text-align: center;
+}
+.pro-detail-con .pro-detail-box .txt-box .add-card button{
+    width: 100%;
+    height: 45px;
+    background-color: red;
+    float: left;
+    margin-top: 10px;
+    color: #fff;
+}
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.product-con{
+        width: 80%;
+    }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.product-con{
+        width: 98% !important;
+    }
+    .pro-detail-con{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .pro-detail-con .pro-detail-box{
+        width: 100%;
+        height: 640px;
+    }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .product-con{
+        width: 100%;
+        position: relative;
+    }
+    .product-con .product .product-box .title-box .btn-filter{
+        display: block;
+    }
+    .product-con .filter{
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 250px;
+        top: 0;
+        left: -252px;
+        background-color: #eee;
+        z-index: 2000;
+        overflow-x: scroll;
+        box-shadow: 1px 1px 5px 0 rgba(85,85,85,.337);
+        transition: .5s;
+        padding: 5px 10px;
+    }
+    .pro-detail-con {
+        margin-top: 61px;
+        width: 100%;
+    }
+    .pro-detail-con .pro-detail-box{
+        width: 100%;
+        height: 1000px;
+    }
+    .pro-detail-con .pro-detail-box .img-box{
+        text-align: center;
+        width: 100%;
+        height: 50%;
+    }
+    .pro-detail-con .pro-detail-box .img-box img{
+        width: 100%;
+        height: 80%;
+    }
+    .pro-detail-con .pro-detail-box .img-box .filter-img{
+        width: 100%;
+        height: 40%;
+    }
+    .pro-detail-con .pro-detail-box .txt-box{
+        padding: 0 40px;
+        width: 100%;
+        height: 50%;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+    .product-con{
+        width: 100%;
+        position: relative;
+    }
+    .product-con .product .product-box .title-box .btn-filter{
+        display: block;
+    }
+    .product-con .filter{
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 250px;
+        top: 0;
+        left: -252px;
+        background-color: #eee;
+        z-index: 2000;
+        overflow-x: scroll;
+        box-shadow: 1px 1px 5px 0 rgba(85,85,85,.337);
+        transition: .5s;
+        padding: 5px 10px;
+    }
+    .pro-detail-con {
+        width: 100%;
+        margin-top: 61px;
+    }
+    .pro-detail-con .pro-detail-box{
+        width: 100%;
+        height: 900px;
+    }
+    .pro-detail-con .pro-detail-box .img-box{
+        text-align: center;
+        width: 100%;
+        height: 45%;
+        padding: 0;
+    }
+    .pro-detail-con .pro-detail-box .img-box img{
+        width: 100%;
+        height: 70%;
+    }
+    .pro-detail-con .pro-detail-box .img-box .filter-img{
+        width: 100%;
+        height: 40%;
+    }
+    .pro-detail-con .pro-detail-box .txt-box{
+        width: 100%;
+        height: 55%;
+    }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .product-con{
+        width: 100%;
+        position: relative;
+    }
+    .product-con .product .product-box .title-box .btn-filter{
+        display: block;
+    }
+    .product-con .filter{
+        display: block;
+        position: fixed;
+        height: 100%;
+        width: 250px;
+        top: 0;
+        left: -252px;
+        background-color: #eee;
+        z-index: 20000;
+        overflow-x: scroll;
+        box-shadow: 1px 1px 5px 0 rgba(85,85,85,.337);
+        transition: .5s;
+        padding:5px 10px;
+    }
+    .pro-detail-con {
+        width: 100%;
+        margin-top: 61px;
+    }
+    .pro-detail-con .pro-detail-box{
+        width: 100%;
+        height: 900px;
+    }
+    .pro-detail-con .pro-detail-box .img-box{
+        text-align: center;
+        width: 100%;
+        height: 45%;
+        padding: 0;
+    }
+    .pro-detail-con .pro-detail-box .img-box img{
+        width: 100%;
+        height: 70%;
+    }
+    .pro-detail-con .pro-detail-box .img-box .filter-img{
+        width: 100%;
+        height: 40%;
+    }
+    .pro-detail-con .pro-detail-box .txt-box{
+        width: 100%;
+        height: 55%;
+    }
+}

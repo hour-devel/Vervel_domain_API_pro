@@ -1,0 +1,132 @@
+@extends('admin.layout.app')
+
+@section('title','Admin')
+
+@section('content')
+<div class="bar">
+    {{-- <p>
+        <i class="fa-solid fa-bars"></i>
+    </p> --}}
+    <div class="slide">
+        <p>
+            <i class="fa-solid fa-n" style="color:#00FF7F"></i>
+            <i class="fa-solid fa-y" style="color:#E67E22"></i>
+            <i class="fa-solid fa-l" style="color:#00BFFF"></i>
+            <i class="fa-solid fa-i" style="color:#DC3545"></i>
+            <i class="fa-solid fa-h" style="color:#40E0D0"></i>
+            <i class="fa-solid fa-o" style="color:#7B68EE"></i>
+            <i class="fa-solid fa-u" style="color:#FFC107"></i>
+            <i class="fa-solid fa-r" style="color:#FF1493"></i>
+        </p>
+    </div>
+    <i class="fa-regular fa-comments"></i>
+    <i class="fa-regular fa-bell"></i>
+    @if((collect(request()->query())->only('mode'))->isNotEmpty())
+        @foreach (collect(request()->query())->only('mode') as $key => $val)
+            <input type="hidden" name="{{$key}}" value="{{$val}}">
+            @if($val=='dm_on')
+                <p style="display: none">
+                    {{$mode='dm_on'}}
+                </p>
+            @else
+                @if($val=='dm_off')
+                <p style="display: none">
+                    {{$mode='dm_off'}}
+                </p>
+                @endif
+            @endif
+            <a href="{{$url = url()->full()."&screen=full";}}" style="color: #454D55"><i class="fa-solid fa-maximize max"></i></a>
+            <a href="{{$url = url()->full()."&screen=exit";}}" style="color: #454D55"><i class="fa-solid fa-minimize min"></i></a>
+        @endforeach
+    @endif
+</div>
+@if((collect(request()->query())->only('mode'))->isNotEmpty())
+    @foreach (collect(request()->query())->only('mode') as $key => $val)
+        <input type="hidden" name="{{$key}}" value="{{$val}}">
+        @if($val=='dm_on')
+            <p style="display: none"> 
+                {{$back_color='#454D55'}}
+                {{$table_color='#343A40'}}
+                {{$color='#eee'}}
+                {{$th_color='#fff'}}
+                {{$td_color='#00FF7F'}}
+                {{$label_color='#fff'}}
+                {{$input_border='#00FF7F'}}
+            </p>
+        @else
+            @if($val=='dm_off')
+            <p style="display: none">
+                {{$back_color='#eee'}} 
+                {{$table_color='#fff'}}
+                {{$color='#454D55'}} 
+                {{$th_color='#aaa'}}
+                {{$td_color='navy'}}
+                {{$label_color='#666'}}
+                {{$input_border='#6F5CC4'}}
+            </p>
+            @endif
+        @endif
+    @endforeach
+    @else
+    <p style="display: none"> 
+        {{$back_color=''}}
+        {{$table_color=''}}
+        {{$color=''}}
+        {{$th_color=''}}
+        {{$td_color=''}}
+        {{$label_color=''}}
+        {{$input_border=''}}
+    </p>
+@endif
+<div class="tab" style="background-color:{{$back_color}}">
+    <div class="form" style="background-color: {{$table_color}}">
+        <form action="{{route('Layout.store')}}" method="POST" enctype="multipart/form-data">
+            @csrf
+            <div class="row">
+                <div class="column">
+                    <div class="txt">
+                        <label for="" style="color:{{$label_color}}">Name</label>
+                    </div>
+                    <div class="box">
+                        <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" 
+                        placeholder="Your First Name" style="border:2px solid {{$input_border}}">
+                        @error('name')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                    @enderror
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="txt">
+                        <label for="" style="color:{{$label_color}}">Status</label>
+                    </div>
+                    <div class="box">
+                        <select name="status" class="form-select @error('status') is-invalid @enderror"" style="border:2px solid {{$input_border}}">
+                            <option value="1">Show</option>
+                            <option value="0">Hide</option>
+                        </select>
+                        @error('status')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                </div>
+                <div class="column"></div>
+            </div>
+            @if ($message = Session::get('success'))
+                <div class="message">
+                    <p>{{$message}}</p>
+                </div>
+            @endif
+            <div class="action">
+                <a href="{{route('Layout.index',['mode'=>$mode])}}">
+                    <button type="button" class="btn btn-danger cancel">Cancel</button>
+                </a>
+                <button type="submit" class="btn btn-primary add">Add new</button>
+            </div>
+        </form>
+    </div>
+</div>
+@endsection
